@@ -3,8 +3,19 @@
 ## 1. 数组排序和查找
 
 ### 比较器
-### C++排序算法
+### qsort比较函数
+```C++
+int cmp(const void*a,const void*b){
+    int* ia=(int*)a;
+    int* ib=(int*)b;
+    return *ia-*ib;
+}
+```
+### sort比较函数
+```c++
+bool cmp(int a,int b){return a<b;}
 
+```
 ## 2. 二分查找
 
 ### C++二分查找函数
@@ -14,7 +25,15 @@
 - upper_bound
 - equal_range
 
-### 二分法的应用
+### 二分查找法的应用
+
+- 高效计数
+
+- count O(n)
+
+- upper_bound/lower_bound O(log(n))
+
+  
 
 ## 3. 各种排序方法的实现
 ### 平方排序
