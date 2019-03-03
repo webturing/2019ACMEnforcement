@@ -3,4 +3,4 @@ project(NIOP)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(NIOP lec01/select.cpp)
+add_executable(NIOP lec01/insert.cpp)
