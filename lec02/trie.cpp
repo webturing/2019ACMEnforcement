@@ -111,7 +111,7 @@ struct Trie{//字典树，实现单词的增删查写
     }
 
     /*
-     * 中序遍历打印以s为前缀，指针为root的字典树
+     * 先序遍历打印以s为前缀，指针为root的字典树
      */
     void preTraverse(string s, Node* root){
         if(root->isEnd){
