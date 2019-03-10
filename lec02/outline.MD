@@ -22,18 +22,17 @@ void get_next(String T, int *next) {
             k = next[k];
     }
 }
-```
 
-###求出next[]数组过后KMP代码就很好实现了
-###下面是KMP的完整代码
-```
+
+求出next[]数组过后KMP代码就很好实现了
+下面是KMP的完整代码
+
 #include<bits/stdc++.h>
 
 using namespace std;
 #define T 10000
 #define P 100
 int Next[T] = {0};
-
 void get_next(char p[], int Next[]) {
     int j = 0, k = -1;
     Next[0] = -1;
@@ -49,7 +48,6 @@ void get_next(char p[], int Next[]) {
             k = Next[k];
     }
 }
-
 int kmp(char t[], char p[]) {
     int i = 0, j = 0, a = strlen(t), b = strlen(p);
     while (i < a && j < b) {
@@ -72,7 +70,6 @@ int main() {
     printf("%d\n", kmp(t, p));
     return 0;
 }
+建议大家去OJ上面刷2069,2070
 ```
-####建议大家去OJ上面刷2069,2070
-
 ## 四、字符串高效查找算法：字典树Trie
