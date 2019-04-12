@@ -3,4 +3,4 @@ project(NIOP)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(NIOP lec01/qsort.cpp)
+add_executable(NIOP lec01sort/qsort.cpp)
